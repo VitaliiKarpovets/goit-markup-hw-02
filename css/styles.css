@@ -27,6 +27,7 @@ a {
 .logo {
   color: rgba(0, 0, 0, 1);
   font-family: Raleway;
+  font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
@@ -41,7 +42,7 @@ a {
   color: var(--accent-color);
 }
 
-.link {
+.site-nav .link {
   color: var(--nav-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -49,11 +50,30 @@ a {
   letter-spacing: 0.02em;
 }
 
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 .site-media .link {
   color: var(--text-color);
 }
 
-.link:hover,
-.link:focus {
+.site-media .link:hover,
+.site-media .link:focus {
   color: var(--accent-color);
+}
+
+/* Main */
+
+.hero {
+  background-color: rgba(47, 48, 58, 1);
+}
+
+.hero-title {
+  color: rgba(255, 255, 255, 1);
 }
